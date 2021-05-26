@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_server"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9195AC"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_server"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="378dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="23dp"
+        android:background="#4CAF50"
+        android:drawableBottom="@android:drawable/ic_lock_power_off"
+        android:onClick="onClick"
+        android:text="START SERVER"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/send_data"
+        android:layout_below="@+id/edMessage">
+
+        <LinearLayout
+            android:id="@+id/msgList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
